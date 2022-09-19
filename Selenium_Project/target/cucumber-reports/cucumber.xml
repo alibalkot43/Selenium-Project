@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="7.803335">
+<testcase classname="Validating a news article is valid" name="Validate the first Guardian news article in Googles search results" time="7.803335">
+<system-out><![CDATA[Given I navigate to "https://www.theguardian.com/tone/news".................passed
+When I search the title of the first article in Google......................passed
+Then more than 1 results should be found....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

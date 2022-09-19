@@ -1,0 +1,101 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4734645500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I navigate to \"https://www.theguardian.com/tone/news\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.theguardian.com/tone/news",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefinitions.i_navigate_to(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 202666,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Validate the first Guardian news article in Googles search results",
+        "description": "",
+        "id": "validating-a-news-article-is-valid;validate-the-first-guardian-news-article-in-googles-search-results",
+        "after": [
+          {
+            "result": {
+              "duration": 69417,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1873281292,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search the title of the first article in Google",
+            "match": {
+              "location": "StepDefinitions.searchTheTitleOfFirstNewsInGoogle()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1195136417,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "more than 1 results should be found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinitions.moreThanResultsShouldCanBeFound(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating a news article is valid",
+    "description": "",
+    "id": "validating-a-news-article-is-valid",
+    "keyword": "Feature",
+    "uri": "features/news.feature"
+  }
+]
